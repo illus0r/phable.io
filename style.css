@@ -7,6 +7,7 @@ html body{
   font-weight: 300;
   line-height: 1.3em;
   font-size: 20px;
+  min-width: 300px;
 }
 
 p{
@@ -129,7 +130,7 @@ section.contact{}
     margin-bottom: 10px;
     border: 2px #333 solid;
     box-sizing: border-box;
-    max-width: 600px;
+    max-width: 500px;
   }
   section.contact input{
     height: 30px;
