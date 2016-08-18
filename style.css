@@ -1,8 +1,6 @@
 html{
-  width: 100%;
 }
 html body{
-  width: 100%;
   margin-right: auto;
   margin-left: auto;
   font-family: "Roboto";
@@ -28,7 +26,7 @@ a:hover{
 header.site-header{
   height: 108px;
   background-color: #333333;
-  background-image: url(/images/phable-white.svg);
+  background-image: url(images/phable-white.svg);
   background-position-x: 28px;
   background-position-y: 6px;
   background-repeat: no-repeat;
@@ -38,11 +36,15 @@ header.site-header{
 
 
 section, footer .footer-inner, section.intro .intro-inner{
-  padding-left: 200px;
-  padding-right: 490px;
-  margin: 0 auto 0;
-  box-sizing: border-box;
-  width: 990px;
+  /*width: 300px;*/
+  /*padding-left: 30%;*/
+  padding: 0 5vw;
+}
+@media (min-width: 768px) {
+  section, footer .footer-inner, section.intro .intro-inner{
+    padding: 0 30vw;
+    width: 40vw;
+  }
 }
 section{
   margin-top: 83px;
@@ -55,12 +57,12 @@ section{
     font-size: 2.7em;
     line-height: 1em;
     margin-bottom: 0.5em;
-    margin-right: -200px;
+    /*margin-right: -200px;*/
   }
 
 
 section.intro{
-  background-image: url(/images/header.jpg);
+  background-image: url(images/header.jpg);
   background-position-x: 50%;
   background-position-y: 50%;
   background-repeat: no-repeat;
@@ -70,36 +72,53 @@ section.intro{
   padding: 0;
 }
   section.intro .intro-inner{
-    padding: 0;
   }
   section.intro h1{
     text-indent: -9999px;
-    background: url(/images/h-we-are-phable.svg) 0 0 no-repeat;
+    background: url(images/h-we-are-phable.svg) 50% 50% no-repeat;
     background-origin: content-box;
-    padding: 76px 0 0 205px;
-    height: 332px;
-    width: 609px;
+    /*padding: 76px 0 0 205px;*/
+    /*height: 332px;*/
+    /*width: 609px;*/
+    width: 100%;
+    height: 40vw;
+    max-width: 600px;
+    padding: 5vw 0 4vw;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    section.intro h1{
+      height: 29vw;
+      max-width: 60vw;
+    }
   }
   section.intro .slogan{
-    height: 100px;
     background-color: rgba(255,255,255,0.8);
-    margin-left: 200px;
-    margin-top: 14px;
-    height: 93px;
-    padding: 8px 11px;
-    width: 360px;
+    /*margin-left: 200px;*/
+    /*height: 93px;*/
+    margin: 0 -5vw;
+    padding: 4vw 5vw 5vw;
+    /*width: 360px;*/
+  }
+  @media (min-width: 768px) {
+    section.intro .slogan{
+      margin: 0 -15px;
+      padding: 15px 20px 30px;
+      width: 40vw;
+      box-sizing: border-box;
+    }
   }
 
 section.about{}
   section.about h2{
     text-indent: -9999px;
-    background: url(/images/h-about-us.svg) 0 0 no-repeat;
+    background: url(images/h-about-us.svg) 0 0 no-repeat;
   }
 
 section.contact{}
   section.contact h2{
     text-indent: -9999px;
-    background: url(/images/h-talk-to-us.svg) 0 0 no-repeat;
+    background: url(images/h-talk-to-us.svg) 0 0 no-repeat;
   }
   section.contact input,
   section.contact textarea
@@ -109,6 +128,8 @@ section.contact{}
     font-size: 1em;
     margin-bottom: 10px;
     border: 2px #333 solid;
+    box-sizing: border-box;
+    max-width: 600px;
   }
   section.contact input{
     height: 30px;
@@ -132,14 +153,15 @@ section.contact{}
 
 footer{
   background-color: #e5e5e5;
-  padding: 20px 0 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   margin-top: 83px;
 }
   footer .logo{
     width: 113px;
     height: 25px;
     margin-bottom: 10px;
-    background-image: url(/images/phable-black.svg);
+    background-image: url(images/phable-black.svg);
     background-position-x: 0;
     background-position-y: 0;
     background-repeat: no-repeat;
