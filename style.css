@@ -25,13 +25,19 @@ a:hover{
 }
 
 header.site-header{
-  height: 108px;
   background-color: #333333;
-  background-image: url(images/phable-white.svg);
-  background-position-x: 28px;
-  background-position-y: 6px;
-  background-repeat: no-repeat;
-  background-size: 250px 100px;
+}
+header.site-header a{
+  display: block;
+  height: 10vw;
+  width: 20vw;
+  margin-left: 2vw;
+  background: url(images/phable-white.svg) 0 50% no-repeat;
+  /*background-size: */
+  /*background-position-x: 28px;*/
+  /*background-position-y: 6px;*/
+  /*background-size: 250px 100px;*/
+  /*background-origin: */
   text-indent: -9999px;
 }
 
@@ -52,6 +58,12 @@ section{
 }
   section a{
     font-weight: 900;
+    border-color: transparent;
+    transition: border-color 200ms;
+    border-width: 3px;
+  }
+  section a:hover{
+    border-color: black;
   }
   section h2{
     font-weight: 400;
@@ -127,6 +139,7 @@ section.contact{}
     width: 100%;
     display: block;
     font-size: 1em;
+    padding: 20px 10px;
     margin-bottom: 10px;
     border: 2px #333 solid;
     box-sizing: border-box;
@@ -140,12 +153,13 @@ section.contact{}
   }
   section.contact input[type="submit"]{
     background-color: #333;
-    height: 30px;
+    height: 44px;
     font-weight: 400;
     color: white;
     border: none;
     width: 100px;
     margin-top: 20px;
+    padding: 0 0 3px;
   }
   section.contact input[name="_gotcha"]{
     display: none;
