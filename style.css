@@ -29,10 +29,10 @@ header.site-header{
 }
 header.site-header a{
   background-image: url(images/phable-white.svg);
-  background-position-x: 0;
-  background-position-y: 50%;
+  background-position: 0 50%;
   background-repeat: no-repeat;
   background-size: 70%;
+  border: none;
   display: block;
   height: 8vw;
   margin-left: 2vw;
@@ -101,8 +101,7 @@ section.intro{
   section.intro h1{
     background-image: url(images/slogan.svg);
     background-origin: content-box;
-    background-position-x: 28%;
-    background-position-y: 50%;
+    background-position: 28% 50%;
     background-repeat: no-repeat;
     display: inline-block;
     height: 110%;
@@ -120,20 +119,23 @@ section.intro{
     }
   }
   section.intro .decoration{
+    /*margin: -36vw 3vw -36vw 10vw;*/
     background-image: url(images/bulb.png);
-    background-position-x: 50%;
-    background-position-y: 50%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 100%;
     display: inline-block;
     height: 110vw;
-    margin: -36vw 3vw -36vw 10vw;
+    position: absolute;
+    left: 15vw;
+    top: -36vw;
     width: 120vw;
   }
   @media (min-width: 768px) {
     section.intro .decoration{
       height: 90vw;
-      margin: -36vw 3vw;
+      left: 3vw;
+      /*margin: -36vw 3vw;*/
       width: 70vw;
     }
   }
@@ -190,8 +192,7 @@ footer{
 }
   footer .logo{
     background-image: url(images/phable-black.svg);
-    background-position-x: 0;
-    background-position-y: 0;
+    background-position: 0 0;
     background-repeat: no-repeat;
     height: 25px;
     margin-bottom: 10px;
