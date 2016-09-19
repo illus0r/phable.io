@@ -1,12 +1,12 @@
 html{
 }
 html body{
-  margin-right: auto;
-  margin-left: auto;
   font-family: "Roboto";
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.3em;
-  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 300px;
 }
 
@@ -15,10 +15,10 @@ p{
 }
 
 a{
-  color: black;
-  text-decoration: none;
   border-bottom: 1px solid rgba(0,0,0,0.2);
+  color: black;
   display: inline-block;
+  text-decoration: none;
 }
 a:hover{
   border-color: black;
@@ -28,25 +28,22 @@ header.site-header{
   background-color: #333333;
 }
 header.site-header a{
+  background-image: url(images/phable-white.svg);
+  background-position-x: 0;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: 70%;
   display: block;
   height: 8vw;
-  max-height: 80px;
-  width: 30vw;
-  max-width: 190px;
   margin-left: 2vw;
-  background: url(images/phable-white.svg) 0 50% no-repeat;
-  background-size: 70%;
-  /*background-position-x: 28px;*/
-  /*background-position-y: 6px;*/
-  /*background-size: 250px 100px;*/
-  /*background-origin: */
+  max-height: 80px;
+  max-width: 190px;
   text-indent: -9999px;
+  width: 30vw;
 }
 
 
 section, footer .footer-inner, section.intro .intro-inner{
-  /*width: 300px;*/
-  /*padding-left: 30%;*/
   padding: 0 5vw;
 }
 @media (min-width: 768px) {
@@ -59,98 +56,110 @@ section{
   margin-top: 83px;
 }
   section a{
-    font-weight: 900;
     border-color: transparent;
-    transition: border-color 200ms;
     border-width: 3px;
+    font-weight: 900;
+    transition: border-color 200ms;
   }
   section a:hover{
     border-color: black;
   }
   section h2{
     font-weight: 400;
-    /*font-size: em;*/
-    /*line-height: 1em;*/
     height: 5vw;
-    min-height: 30px;
-    max-height: 55px;
     margin-bottom: 1em;
-    /*width: 70%;*/
+    max-height: 55px;
+    min-height: 30px;
     width: 100%;
-    /*margin-right: -200px;*/
   }
 
 
 section.intro{
-  background-image: url(images/header.jpg);
-  background-position-x: 50%;
-  background-position-y: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(images/header.png);
+  background-position-y: 87%;
+  background-repeat: repeat-x;
+  background-size: 1px 150%;
   margin: 0;
-  width: 100%;
+  overflow: hidden;
   padding: 0;
+  width: 100%;
 }
   section.intro .intro-inner{
   }
-  section.intro h1{
-    text-indent: -9999px;
-    background: url(images/h-we-are-phable.svg) 50% 50% no-repeat;
-    background-origin: content-box;
-    /*padding: 76px 0 0 205px;*/
-    /*height: 332px;*/
-    /*width: 609px;*/
-    width: 100%;
-    height: 40vw;
-    max-width: 600px;
-    padding: 5vw 0 4vw;
+  section.intro .wrapper{
+    height: 46vw;
     margin: 0 auto;
+    margin: 12vw 30vw 19vw 5vw;
+    position: relative;
+  }
+  @media (min-width: 768px) {
+    section.intro .wrapper{
+      height: 26vw;
+      margin: 7vw 30vw 12vw;
+    }
+  }
+  section.intro h1{
+    background-image: url(images/slogan.svg);
+    background-origin: content-box;
+    background-position-x: 28%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 110%;
+    left: 0;
+    max-width: 1000px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 0;
+    vertical-align: top;
+    width: 50%;
   }
   @media (min-width: 768px) {
     section.intro h1{
-      height: 29vw;
-      max-width: 60vw;
+      height: 100%;
     }
   }
-  section.intro .slogan{
-    background-color: rgba(255,255,255,0.8);
-    /*margin-left: 200px;*/
-    /*height: 93px;*/
-    margin: 0 -5vw;
-    padding: 4vw 5vw 5vw;
-    /*width: 360px;*/
+  section.intro .decoration{
+    background-image: url(images/bulb.png);
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 110vw;
+    margin: -36vw 3vw -36vw 10vw;
+    width: 120vw;
   }
   @media (min-width: 768px) {
-    section.intro .slogan{
-      margin: 0 -15px;
-      padding: 15px 20px 30px;
-      width: 40vw;
-      box-sizing: border-box;
+    section.intro .decoration{
+      height: 90vw;
+      margin: -36vw 3vw;
+      width: 70vw;
     }
   }
 
 section.about{}
   section.about h2{
-    text-indent: -9999px;
     background: url(images/h-about-us.svg) 0 bottom no-repeat;
+    text-indent: -9999px;
   }
 
 section.contact{}
   section.contact h2{
-    text-indent: -9999px;
     background: url(images/h-talk-to-us.svg) 0 bottom no-repeat;
+    text-indent: -9999px;
   }
   section.contact input,
   section.contact textarea
   {
-    width: 100%;
-    display: block;
-    font-size: 1em;
-    padding: 20px 10px;
-    margin-bottom: 10px;
     border: 2px #333 solid;
     box-sizing: border-box;
+    display: block;
+    font-size: 1em;
+    margin-bottom: 10px;
     max-width: 500px;
+    padding: 20px 10px;
+    width: 100%;
   }
   section.contact input{
     height: 30px;
@@ -160,13 +169,13 @@ section.contact{}
   }
   section.contact input[type="submit"]{
     background-color: #58595b;
-    height: 44px;
-    font-weight: 400;
-    color: white;
     border: none;
-    width: 100px;
+    color: white;
+    font-weight: 400;
+    height: 44px;
     margin-top: 20px;
     padding: 0 0 3px;
+    width: 100px;
   }
   section.contact input[name="_gotcha"]{
     display: none;
@@ -175,19 +184,19 @@ section.contact{}
 
 footer{
   background-color: #e5e5e5;
-  padding-top: 20px;
-  padding-bottom: 10px;
   margin-top: 83px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
   footer .logo{
-    width: 113px;
-    height: 25px;
-    margin-bottom: 10px;
     background-image: url(images/phable-black.svg);
     background-position-x: 0;
     background-position-y: 0;
     background-repeat: no-repeat;
+    height: 25px;
+    margin-bottom: 10px;
     text-indent: -9999px;
+    width: 113px;
   }
   footer p{
     font-size: 0.7em;
